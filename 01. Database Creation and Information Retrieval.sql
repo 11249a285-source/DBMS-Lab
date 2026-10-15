@@ -3,7 +3,7 @@ Aim: To create a Student table and demonstrate information retrieval using filte
 Commands:
     
 1. Create the Student Table
-    
+
 CREATE TABLE Student (
     Student_ID NUMBER PRIMARY KEY,
     Student_Name VARCHAR2(50) NOT NULL,
