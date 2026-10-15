@@ -1,5 +1,4 @@
-Aim:
-To create a student database in MySQL and demonstrate information retrieval using filtering, sorting, pattern matching, and aggregate functions.
+Aim: To create a student database in MySQL and demonstrate information retrieval using filtering, sorting, pattern matching, and aggregate functions.
 
 Commands:
 
@@ -40,7 +39,6 @@ INSERT INTO Student VALUES
 SELECT * FROM Student
 ORDER BY Student_ID;
 
-
 Output: 
 Student_ID	Student_Name	Department	Year	Age	Gender	Marks	City
 101	        Arun	        CSE	        2	    19	Male	  85.00	Chennai
@@ -61,13 +59,12 @@ FROM Student
 WHERE Department = 'CSE'
 ORDER BY Student_ID;
 
-
 Output:
 Student_ID	Student_Name	Department
-101	Arun	CSE
-103	Ravi	CSE
-106	Divya	CSE
-110	Kavya	CSE
+101	        Arun	        CSE
+103	        Ravi	        CSE
+106	        Divya	        CSE
+110	        Kavya	        CSE
 
 5. Retrieve Students Whose Marks Are Between 70 and 90
 
@@ -76,14 +73,13 @@ FROM Student
 WHERE Marks BETWEEN 70 AND 90
 ORDER BY Marks ASC;
 
-
 Output:
 Student_Name	Marks
-Rahul	72
-Anjali	81
-Arun	85
-Sneha	88
-Kavya	90
+Rahul	        72
+Anjali	        81
+Arun	        85
+Sneha	        88
+Kavya	        90
 
 6. Retrieve Students Whose Names Start with 'A'
 
@@ -92,11 +88,10 @@ FROM Student
 WHERE Student_Name LIKE 'A%'
 ORDER BY Student_ID;
 
-
 Output:
 Student_ID	Student_Name
-101	Arun
-108	Anjali
+101	        Arun
+108	        Anjali
 
 7. Count Total Students and Departments
 
@@ -104,10 +99,9 @@ SELECT COUNT(*) AS Total_Students,
        COUNT(DISTINCT Department) AS Departments
 FROM Student;
 
-
 Output:
 Total_Students	Departments
-10	5
+10	            5
 
 8. Display the Top Three Students Based on Marks
 
@@ -116,9 +110,8 @@ FROM Student
 ORDER BY Marks DESC
 LIMIT 3;
 
-
 Output:
 Student_Name	Marks
-Divya	94
-Priya	92
-Kavya	90
+Divya	        94
+Priya	        92
+Kavya	        90
